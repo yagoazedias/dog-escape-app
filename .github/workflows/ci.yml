@@ -6,8 +6,7 @@ on:
 
 jobs:
   release:
-    name: Deploy Web to Firebase Hosting
-    needs: build_web
+    name: Deploy Web
     runs-on: ubuntu-latest
     steps:
 
