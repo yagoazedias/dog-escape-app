@@ -20,7 +20,7 @@ jobs:
         uses: actions/upload-artifact@master
         with:
           name: web-build
-          path: ./build/web
+          path: /home/runner/work/dog-escaper/dog-escape-app/build/web
 
   deploy_web:
     name: Deploy Web to Firebase Hosting
@@ -35,7 +35,7 @@ jobs:
         uses: actions/download-artifact@master
         with:
           name: web-build
-          path: ./build/web
+          path: /home/runner/work/dog-escaper/dog-escape-app/build/web
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
